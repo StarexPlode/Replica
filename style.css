@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 100%;
+}
+.page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    height: 100vh;
+
+    font-family: 'Geist', sans-serif;
+    font-weight: 900;
+}
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    padding: 0 30px;
+
+    gap: 20px;
+
+    background-color: #fdfaf5;
+
+    border-right: solid 2px black;
+}
+.left {
+    font-size: 1.4rem;
+    white-space: nowrap;
+}
+.left span {
+    display: block;
+    text-align: center;
+
+    margin: -20px;
+
+    font-family: 'Caveat', sans-serif;
+    font-size: 4.6rem;
+}
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 30px;
+}
+.box {
+    display: grid;
+    grid-template-rows: 1fr 0.8fr 5fr;
+
+    border: solid 2px black;
+    border-radius: 1rem;
+
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    min-width: 350px;
+
+    font-size: 0.8rem;
+    text-align: center;
+}
+#top {
+    border-bottom: solid 2px black;
+    padding: 1.5rem;
+}
+#mid {
+    DISPLAY: FLEX;
+    border-bottom: solid 2px black;
+}
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+    padding: 4px;
+
+    border: solid 2px black;
+    border-radius: 1rem;
+    width: 100%
+}
+.buttons button {
+    border-radius: 1rem;
+    border: none;
+    padding: 0.8rem;
+    flex: 1;
+    
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+
+    font-weight: 700;
+}
+#bottom {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.8rem;
+
+    padding: 1rem;
+}
+#discord {
+    background-color: #5865f2 !important;
+    color: white;
+}
+#bottom button {
+    padding: 0.8rem;
+    border: solid 2px black;
+    border-radius: 1rem;
+
+    background-color: white;
+
+    font-size: 1rem;
+    font-weight: 700;
+}
+.divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #888
+}
+.divider span {
+    margin: 0 10px;
+}
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: dashed 2px;
+}
+.otp {
+    display: flex;
+    gap: 10px;
+
+    border: solid 2px black;
+    border-radius: 1rem;
+
+    padding: 0.25rem;
+}
+.otp button {
+    flex: 1;
+    background-color: black !important;
+    color: white;
+}
+.forms {
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+
+    gap: 10px;
+
+    text-align: start;
+    font-size: 1rem;
+}
+.forms input {
+    padding: 0.8rem;
+    border-radius: 1rem;
+}
+.forms button {
+    margin-top: 20px;
+    background-color: #7bbdff !important;
+}
+@media screen and (max-width: 1000px) {
+    .page {
+        grid-template-columns: 1fr;
+    }
+    .left {
+        display: none;
+    }
+}
