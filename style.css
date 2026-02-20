@@ -52,6 +52,7 @@ html {
     padding: 0 30px;
 }
 #logor {
+    display: none;
     width: 6rem;
     margin: 10px 0;
 }
@@ -175,5 +176,8 @@ html {
     }
     .left {
         display: none;
+    }
+    #logor {
+        display: block;
     }
 }
