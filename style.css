@@ -76,8 +76,36 @@ html {
     padding: 1.5rem;
 }
 #mid {
-    DISPLAY: FLEX;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+
     border-bottom: solid 2px black;
+}
+.toggler {
+    width: 100%;
+}
+.toggler input {
+    display: none;
+}
+.toggler .labels {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+.labels label {
+    cursor: pointer;
+    padding: 0.8rem;
+    border: solid 2px black;
+    border-radius: 1rem;
+    flex: 1;
+}
+#signin:checked ~ .labels label[for="signin"],
+#signup:checked ~ .labels label[for="signup"] {
+    background-color: black;
+    color: white;
 }
 .buttons {
     display: flex;

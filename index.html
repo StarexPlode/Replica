@@ -21,12 +21,17 @@
             <div class="box">
                 <div id="top">
                     <h1>Get Started</h1>
-                    <p>Sign in to continue your focus journey</p>
+                    <p id="para">Sign in to continue your focus journey</p>
                 </div>
                 <div id="mid">
-                    <div class="buttons">
-                        <button>Sign up</button>
-                        <button>Sign in</button>
+                    <div class="toggler">
+                        <input type="radio" name="auth" id="signin" checked>
+                        <input type="radio" name="auth" id="signup">
+
+                        <div class="labels">
+                            <label for="signin">Sign In</label>
+                            <label for="signup">Sign Up</label>
+                        </div>
                     </div>
                 </div>
                 <div id="bottom">
@@ -50,5 +55,6 @@
             </div>
         </section>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
