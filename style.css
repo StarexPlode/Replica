@@ -216,7 +216,7 @@ html {
     margin-top: 20px;
     background-color: #7bbdff !important;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
     .page {
         grid-template-columns: 1fr;
     }
