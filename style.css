@@ -101,6 +101,11 @@ html {
     border: solid 2px black;
     border-radius: 1rem;
     flex: 1;
+
+    transition: 0.2s ease;
+}
+.labels label:hover {
+    transform: scale(1.02);
 }
 #signin:checked ~ .labels label[for="signin"],
 #signup:checked ~ .labels label[for="signup"] {
