@@ -83,6 +83,7 @@ html {
     flex-direction: column;
 
     border-bottom: solid 2px black;
+    background-color: #eeedec
 }
 .toggler {
     width: 100%;
@@ -92,20 +93,20 @@ html {
 }
 .toggler .labels {
     display: flex;
-    padding: 10px;
+    padding: 0.3rem;
     gap: 10px;
+
+    margin: 10px;
+    border-radius: 1rem;
+    border: solid 2px black;
 }
 .labels label {
     cursor: pointer;
     padding: 0.8rem;
-    border: solid 2px black;
     border-radius: 1rem;
     flex: 1;
 
-    transition: 0.2s ease;
-}
-.labels label:hover {
-    transform: scale(1.02);
+    transition: 0.3s ease;
 }
 #signin:checked ~ .labels label[for="signin"],
 #signup:checked ~ .labels label[for="signup"] {
@@ -208,6 +209,7 @@ html {
 .forms input {
     padding: 0.8rem;
     border-radius: 1rem;
+    border: solid 2px black;
 }
 .forms button {
     margin-top: 20px;
